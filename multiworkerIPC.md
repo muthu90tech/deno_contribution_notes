@@ -8,4 +8,7 @@ console.log('test')
 NodeJS
 `lib/internal/process/prepareExecution.js` which launches several IPC channel.
 
-TODO: find deno side of things..
+Wrote a c.ts, in ext/node/polyfills/c/c.ts
+which will dynamically load either child or primary based on a env var.
+
+Have to next figure out the entrypoint in deno which preps execution environment.
